@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Navya Sri Annapreddy | Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navya Sri | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <h1>Navya Sri Annapreddy</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Hello, I'm Navya Sri</h2>
-      <p>Software Developer | Passionate about clean code and creative solutions.</p>
-      <a href="resume.pdf" class="btn">Download Resume</a>
-    </div>
-  </section>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="assets/images/navya.jpeg" alt="Navya Sri" class="profile-img" />
+            <h1>Navya Sri</h1>
+            <p>Software Developer</p>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+                <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-  <section class="intro">
-    <div class="container">
-      <h3>About Me</h3>
-      <p>
-        I'm a software developer focused on building efficient and scalable applications.
-        I enjoy working with modern web technologies and solving real-world problems with clean, maintainable code.
-      </p>
-      <a href="about.html" class="btn">Learn More</a>
-    </div>
-  </section>
+    <main class="main-content">
+        <section id="hero" class="hero section dark-background">
 
-  <section class="highlight">
-    <div class="container">
-      <h3>Featured Projects</h3>
-      <p>Check out some of my best work.</p>
-      <a href="projects.html" class="btn">View Projects</a>
-    </div>
-  </section>
+            <!-- Background Image -->
+            <img src="assets/images/bg.jpg" alt="Background" data-aos="fade-in" class="hero-bg aos-init aos-animate">
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Navya Sri | <a href="mailto:navyasri.annapareddy@gmail.com">navyasri.annapareddy@gmail.com</a></p>
-    </div>
-  </footer>
+            <!-- Hero Content -->
+            <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <h2>Navya Sri Annapareddy</h2>
+                <p>I'm <span class="typed"
+                        data-typed-items="Software Developer, AI Enthusiast, Full Stack Engineer, Programmer"></span>
+                </p>
+            </div>
+
+        </section>
+    </main>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        const typed = new Typed('.typed', {
+            strings: document.querySelector('.typed').getAttribute('data-typed-items').split(','),
+            typeSpeed: 100,
+            backSpeed: 60,
+            backDelay: 1500,
+            loop: true
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
+
 </html>

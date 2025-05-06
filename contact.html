@@ -1,40 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact - Navya Sri</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Navya Sri</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>Navya Sri</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <section class="section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>I’d love to connect! Whether it's about a job opportunity, a collaboration, or just to say hi, feel free to reach out.</p>
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto:navyasri.annapareddy@gmail.com">navyasri.annapareddy@gmail.com</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/navyasri18" target="_blank">github.com/navyasri18</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/a-navya-sri/" target="_blank">linkedin.com/in/a-navya-sri/</a></li>
-      </ul>
-    </div>
-  </section>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="assets/images/navya.jpeg" alt="Navya Sri" class="profile-img" />
+            <h1>Navya Sri</h1>
+            <p>Software Developer</p>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+                <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Navya Sri</p>
-    </div>
-  </footer>
+    <!-- Main Content -->
+    <main class="main-content">
+        <section id="contact" class="contact section">
+            <!-- Section Title -->
+            <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+                <h2>Contact</h2>
+                <p>Feel free to reach out if you'd like to collaborate or just want to chat!</p>
+            </div><!-- End Section Title -->
+
+            <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4">
+
+                    <!-- Contact Information -->
+                    <div class="col-lg-5">
+                        <div class="info-wrap">
+                            <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                                <div>
+                                    <h3>Address</h3>
+                                    <p>Vijayawada, Andhra Pradesh, India</p>
+                                </div>
+                            </div><!-- End Info Item -->
+
+                            <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                                <i class="bi bi-envelope flex-shrink-0"></i>
+                                <div>
+                                    <h3>Email Us</h3>
+                                    <p>navyasri.annapareddy@gmail.com</p>
+                                </div>
+                            </div><!-- End Info Item -->
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379612.7653831019!2d80.58725151755998!3d16.506174942279175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3c4ed0f66c74a3%3A0x929f1a5b7c263824!2sVijayawada%2C%20Andhra%20Pradesh%2C%20India!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+                                frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+                    </div><!-- End Contact Information -->
+
+                    <!-- Contact Form -->
+                    <div class="col-lg-7">
+                        <form action="https://formsubmit.co/navyasri.annapareddy@gmail.com" method="POST"
+                            class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                            <!-- Hidden fields -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="box">
+                            <input type="hidden" name="_autoresponse"
+                                value="Thanks for reaching out! I’ll get back to you soon.">
+
+                            <div class="row gy-4">
+
+                                <div class="col-md-6">
+                                    <label for="name-field" class="pb-2">Your Name</label>
+                                    <input type="text" name="name" id="name-field" class="form-control" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email-field" class="pb-2">Your Email</label>
+                                    <input type="email" class="form-control" name="email" id="email-field" required>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label for="subject-field" class="pb-2">Subject</label>
+                                    <input type="text" class="form-control" name="subject" id="subject-field" required>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label for="message-field" class="pb-2">Message</label>
+                                    <textarea class="form-control" name="message" rows="10" id="message-field"
+                                        required></textarea>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <button type="submit">Send Message</button>
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div><!-- End Contact Form -->
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        const typed = new Typed('.typed', {
+            strings: document.querySelector('.typed').getAttribute('data-typed-items').split(','),
+            typeSpeed: 100,
+            backSpeed: 60,
+            backDelay: 1500,
+            loop: true
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
 </body>
+
 </html>

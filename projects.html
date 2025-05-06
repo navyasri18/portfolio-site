@@ -1,48 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects - Navya Sri</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navya Sri | Projects</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>Navya Sri</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <section class="section">
-    <div class="container">
-      <h2>My Projects</h2>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="assets/images/navya.jpeg" alt="Navya Sri" class="profile-img" />
+            <h1>Navya Sri</h1>
+            <p>Software Developer</p>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+                <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-      <div class="project">
-        <h3>Personal Portfolio</h3>
-        <p>This portfolio website showcasing my work, skills, and contact info.</p>
-        <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
-        <a href="https://github.com/navyasri18/portfolio-site" target="_blank">🔗 View on GitHub</a>
-      </div>
-      <div class="project">
-        <h3>Mental Health Tracker</h3>
-        <p>A web-based app that assesses a user's mental well-being based on questionnaire responses using machine learning models.</p>
-        <p>It suggests personalized activities to help improve mental health based on predicted outcomes.</p>
-        <p><strong>Tech Stack:</strong> HTML, Python (Flask), Machine Learning, scikit-learn, CSS</p>
-        <a href="https://github.com/navyasri18/Mental-Health-Tracker" target="_blank">🔗 View on GitHub</a>
-      </div>
-    </div>
-  </section>
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="projects section" id="projects">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Projects</h2>
+                <p>Here are some of the recent projects I’ve worked on.</p>
+            </div>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Navya Sri</p>
-    </div>
-  </footer>
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-grid">
+
+                    <div class="project-card" data-aos="zoom-in" data-aos-delay="150">
+                        <h3>Personal Portfolio</h3>
+                        <p>This portfolio website showcasing my work, skills, and contact info.</p>
+                        <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+                        <a href="https://github.com/navyasri18/portfolio-site" target="_blank">🔗 View on GitHub</a>
+                    </div>
+
+                    <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                        <h3>Mental Health Tracker</h3>
+                        <p>A web-based app that assesses a user's mental well-being based on questionnaire responses
+                            using machine learning models.</p>
+                        <p>It suggests personalized activities to help improve mental health based on predicted
+                            outcomes.</p>
+                        <p><strong>Tech Stack:</strong> HTML, Python (Flask), Machine Learning, scikit-learn, CSS</p>
+                        <a href="https://github.com/navyasri18/Mental-Health-Tracker" target="_blank">🔗 View on
+                            GitHub</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
 </body>
+
 </html>
