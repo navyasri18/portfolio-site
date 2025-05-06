@@ -1,0 +1,84 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fafafa;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+  }
+  
+  .site-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .site-header nav {
+    margin-top: 0.5rem;
+  }
+  
+  .site-header nav a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #555;
+  }
+  
+  .hero {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .section {
+    padding: 3rem 1rem;
+    background-color: #ffffff;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    margin: 0.5rem 0;
+    font-weight: bold;
+  }
+  
+  .site-footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #f8f8f8;
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
