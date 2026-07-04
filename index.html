@@ -2,65 +2,152 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navya Sri | Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navya Sri | Software Developer &amp; AI Enthusiast</title>
+  <meta name="description" content="Portfolio of Navya Sri Annapareddy — Software Developer at Amazon, building AI-powered tools, full-stack applications, and cloud infrastructure." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
-        <div class="profile">
-            <img src="assets/images/navya.jpeg" alt="Navya Sri" class="profile-img" />
-            <h1>Navya Sri</h1>
-            <p>Software Developer</p>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="assets/images/navya.jpeg" alt="Navya Sri" class="profile-img" />
+      <h1>Navya Sri</h1>
+      <p>Software Developer</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/a-navya-sri/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/navyasri18" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:navyasri.annapareddy@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+        <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <img src="assets/images/bg.jpg" alt="" class="hero-bg" />
+      <div class="container">
+        <span class="hero-eyebrow"><span class="dot"></span>SDE @ Amazon · Building AI Agents</span>
+        <h2>Hi, I'm Navya Sri Annapareddy</h2>
+        <p>I'm a <span class="typed" data-typed-items="Software Developer, AI Agents Engineer, GenAI Builder, Full-Stack Engineer, Problem Solver"></span></p>
+        <div class="hero-cta">
+          <a href="projects.html" class="btn btn-primary"><i class="fas fa-rocket"></i> View my work</a>
+          <a href="contact.html" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Get in touch</a>
         </div>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
-                <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
-                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-        </nav>
-    </aside>
+      </div>
+      <div class="scroll-hint">
+        <span>Scroll to explore</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
 
-    <main class="main-content">
-        <section id="hero" class="hero section dark-background">
+    <!-- Stats -->
+    <section class="section">
+      <div class="section-title fade-in-up">
+        <h2>By the numbers</h2>
+        <p>A quick snapshot of what I've been building lately.</p>
+      </div>
 
-            <!-- Background Image -->
-            <img src="assets/images/bg.jpg" alt="Background" data-aos="fade-in" class="hero-bg aos-init aos-animate">
+      <div class="stats-grid reveal-stagger">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+          <div class="stat-number"><span data-count="4" data-suffix="+">0</span></div>
+          <div class="stat-label">Years at Amazon</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-dollar-sign"></i></div>
+          <div class="stat-number">$<span data-count="200">0</span>K</div>
+          <div class="stat-label">Cost savings / year</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-gauge-high"></i></div>
+          <div class="stat-number"><span data-count="90" data-suffix="%">0</span></div>
+          <div class="stat-label">Cycle-time reduced</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
+          <div class="stat-number"><span data-count="18">0</span></div>
+          <div class="stat-label">LLM workflows shipped</div>
+        </div>
+      </div>
+    </section>
 
-            <!-- Hero Content -->
-            <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                <h2>Navya Sri Annapareddy</h2>
-                <p>I'm <span class="typed"
-                        data-typed-items="Software Developer, AI Enthusiast, Full Stack Engineer, Programmer"></span>
-                </p>
-            </div>
+    <!-- What I do -->
+    <section class="section">
+      <div class="section-title fade-in-up">
+        <h2>What I do</h2>
+        <p>End-to-end software engineering — from cloud infrastructure to intuitive front-ends, with AI woven in.</p>
+      </div>
 
-        </section>
-    </main>
+      <div class="project-grid reveal-stagger">
+        <div class="project-card tilt-card">
+          <div class="project-icon"><i class="fas fa-cubes"></i></div>
+          <h3>Full-stack development</h3>
+          <p>Design and build scalable web applications with React, Java, Python and modern frameworks.</p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Java</span>
+            <span class="project-tag">Python</span>
+          </div>
+        </div>
+        <div class="project-card tilt-card">
+          <div class="project-icon"><i class="fas fa-robot"></i></div>
+          <h3>AI-powered tools</h3>
+          <p>Ship AI agents and ML integrations that automate weeks of manual work into minutes.</p>
+          <div class="project-tags">
+            <span class="project-tag">GenAI</span>
+            <span class="project-tag">LLMs</span>
+            <span class="project-tag">Agents</span>
+          </div>
+        </div>
+        <div class="project-card tilt-card">
+          <div class="project-icon"><i class="fas fa-cloud"></i></div>
+          <h3>Cloud &amp; DevOps</h3>
+          <p>Automate deployments, cut infrastructure costs, and keep pipelines green with AWS + CDK.</p>
+          <div class="project-tags">
+            <span class="project-tag">AWS</span>
+            <span class="project-tag">CDK</span>
+            <span class="project-tag">CI/CD</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
+  </main>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        const typed = new Typed('.typed', {
-            strings: document.querySelector('.typed').getAttribute('data-typed-items').split(','),
-            typeSpeed: 100,
-            backSpeed: 60,
-            backDelay: 1500,
-            loop: true
-        });
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    if (document.querySelector('.typed')) {
+      new Typed('.typed', {
+        strings: document.querySelector('.typed').getAttribute('data-typed-items').split(','),
+        typeSpeed: 80,
+        backSpeed: 50,
+        backDelay: 1500,
+        loop: true
+      });
+    }
+  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
